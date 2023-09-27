@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5FAFF"
+    tools:context=".StartLicense">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="70dp"
+        android:text="Su licencia aun no ha sido activada, solicite la activacion."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_03" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_correo_activacion"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="18dp"
+        android:text="Copyright © 2023 NOMEMPRESA, All rights reserved."
+        android:textAlignment="center"
+        android:textColor="#3C3C3C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_nombre_activacion"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/textView7"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/edt_codigo_activacion"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/edt_nombre_activacion"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Codigo de activacion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/edt_correo_activacion"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/edt_codigo_activacion"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btn_activar"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="49dp"
+        android:background="@drawable/button_border"
+        android:text="Activar"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

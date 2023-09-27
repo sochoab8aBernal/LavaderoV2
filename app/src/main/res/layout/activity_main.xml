@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5FAFF"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="203dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="197dp"
+        android:background="@drawable/button_border"
+        android:text="Registrar lavado"
+        android:textColor="@color/white"
+        tools:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="203dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="113dp"
+        android:background="@drawable/button_border"
+        android:text="Terminar lavado"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="418dp"
+        android:layout_marginBottom="286dp"
+        android:background="@drawable/separador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        app:srcCompat="@drawable/finalbanner" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_above="@+id/btn_register"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="123dp">
+
+        <LinearLayout
+            android:id="@+id/llBotonera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="244dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="148dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Lavados del dia"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnAlerta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="17dp"
+        android:backgroundTint="#37A8E0"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    <Button
+        android:id="@+id/btnConsult"
+        android:layout_width="203dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_border"
+        android:text="CONSULTAR"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

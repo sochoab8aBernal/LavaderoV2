@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Terminar">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C5FAFF">
+
+            <EditText
+                android:id="@+id/edt_placas3"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="105dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="Placas"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btn_consultar"
+                android:layout_width="203dp"
+                android:layout_height="57dp"
+                android:layout_below="@+id/edt_placas3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginStart="40dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/button_border"
+                android:text="consultar"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/btn_terminar3"
+                android:layout_width="203dp"
+                android:layout_height="57dp"
+                android:layout_below="@+id/txt_telefono"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="38dp"
+                android:background="@drawable/button_border"
+                android:text="Terminar"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/img_foto"
+                android:layout_width="wrap_content"
+                android:layout_height="238dp"
+
+                android:layout_below="@+id/btn_consultar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+
+                app:srcCompat="@drawable/finalbanner" />
+
+
+            <TextView
+                android:id="@+id/txt_nombre"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/fotosVehiculo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="55dp"
+                android:background="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_cedula"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txt_nombre"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="55dp"
+                android:background="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txt_cedula"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="55dp"
+                android:background="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/fotosVehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450dp"
+                android:orientation="vertical"></LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
